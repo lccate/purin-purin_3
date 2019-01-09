@@ -95,7 +95,9 @@ int *p = malloc(i * sizeof(int));//可以根据用户的输入在堆中分配大
 free(p);
 ```
 
-[通过堆空间实现动态大小变化的字符数组](dui.cpp]    
+[通过堆空间实现动态大小变化的字符数组](dui.cpp]   
+
+代码区静态区堆栈  
 ![代码区静态区堆栈](https://github.com/cccccate/purin-purin_3/blob/master/1.png)  
 堆和栈的大小是动态变化的，静态区大小是固定不变的   
 ![例子一](https://github.com/cccccate/purin-purin_3/blob/master/2.png)  
