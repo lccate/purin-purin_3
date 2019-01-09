@@ -105,5 +105,6 @@ free(p);
 ```
 int abc(int a,int b)//c语言的形参是从右到左入栈的，b先入栈，a后入栈
 ```
-![入栈]()
+![入栈](https://github.com/cccccate/purin-purin_3/blob/master/4.png)
 
+##### calloc与realloc的使用
