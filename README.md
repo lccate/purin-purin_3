@@ -96,9 +96,10 @@ free(p);
 ```
 
 [通过堆空间实现动态大小变化的字符数组](dui.cpp]    
-![代码区静态区堆栈]()  
+![代码区静态区堆栈](https://github.com/cccccate/purin-purin_3/blob/master/1.png)  
 堆和栈的大小是动态变化的，静态区大小是固定不变的   
-![两个例子]()  
+![例子一](https://github.com/cccccate/purin-purin_3/blob/master/2.png)  
+![例子二](https://github.com/cccccate/purin-purin_3/blob/master/3.png)  
 ```
 int abc(int a,int b)//c语言的形参是从右到左入栈的，b先入栈，a后入栈
 ```
