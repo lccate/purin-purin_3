@@ -108,3 +108,16 @@ int abc(int a,int b)//c语言的形参是从右到左入栈的，b先入栈，a�
 ![入栈](https://github.com/cccccate/purin-purin_3/blob/master/4.png)
 
 ##### calloc与realloc的使用
+malloc的参数是指定分配的大小，单位，字节  
+calloc的第一个参数是指定单位的数量，第二个参数是指定一个单位的大小  
+用malloc分配10个int  
+```
+int *p = malloc(10*sizeof(int));
+```
+用calloc分配10个int
+```
+int *p = calloc(10*sizeof(int));
+```
+以上两种写法分配堆内存一样，区别：malloc只负责分配，不负责清空，需要用memset清空；calloc内存自动初始化为0，不需要额外清空  
+用malloc分配了内存，想扩大用realloc  
+[calloc_realloc](calloc_realoc.cpp)
