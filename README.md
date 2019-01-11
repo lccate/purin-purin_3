@@ -120,4 +120,13 @@ int *p = calloc(10*sizeof(int));
 ```
 以上两种写法分配堆内存一样，区别：malloc只负责分配，不负责清空，需要用memset清空；calloc内存自动初始化为0，不需要额外清空  
 用malloc分配了内存，想扩大用realloc  
-[calloc_realloc](calloc_realoc.cpp)
+[calloc_realloc](calloc_realoc.cpp)   
+
+## 操作系统分配内存的最小单位说明
+windows下每次堆的变化是4k  
+如果需要1k的空间，操作系统给4k  
+如果需要5k，给8k  
+4k是内存最小单位，优点是效率提升，缺点是浪费了一些内存  
+太小内存节省了但是浪费了效率，太大了效率提高了但是浪费了内存（抽烟的长度为例举例）  
+因此用malloc分配内存的时候不必在大小上过于纠结，除非处于4k的临界值  
+
